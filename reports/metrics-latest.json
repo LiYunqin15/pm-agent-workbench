@@ -1,0 +1,128 @@
+{
+  "metricDefinitionVersion": "goal-standard-1.2",
+  "evaluationVersion": "golden-1.0",
+  "from": "2026-08-01T00:00:00.000Z",
+  "to": "2026-08-18T12:20:54.240Z",
+  "taskType": null,
+  "metrics": {
+    "taskSuccessRate": {
+      "value": 0.3333333333333333,
+      "unit": "ratio",
+      "numerator": 1,
+      "denominator": 3,
+      "sampleSize": 3,
+      "target": 0.8,
+      "targetOperator": ">=",
+      "status": "fail"
+    },
+    "sourceIngestCompleteness": {
+      "value": null,
+      "unit": "ratio",
+      "numerator": 0,
+      "denominator": 0,
+      "sampleSize": 0,
+      "target": 0.99,
+      "targetOperator": ">=",
+      "status": "insufficient_data",
+      "warning": "样本不足，暂不计算该指标。"
+    },
+    "factCitationCoverage": {
+      "value": 0,
+      "unit": "ratio",
+      "numerator": 0,
+      "denominator": 1,
+      "sampleSize": 1,
+      "target": 0.9,
+      "targetOperator": ">=",
+      "status": "fail"
+    },
+    "unsupportedClaimRate": {
+      "value": null,
+      "unit": "ratio",
+      "numerator": 0,
+      "denominator": 0,
+      "sampleSize": 0,
+      "target": 0.05,
+      "targetOperator": "<=",
+      "status": "insufficient_data",
+      "warning": "样本不足，暂不计算该指标。"
+    },
+    "attachmentParseSuccess": {
+      "value": null,
+      "unit": "ratio",
+      "numerator": 0,
+      "denominator": 0,
+      "sampleSize": 0,
+      "target": 0.99,
+      "targetOperator": ">=",
+      "status": "insufficient_data",
+      "warning": "样本不足，暂不计算该指标。"
+    },
+    "artifactGenerationSuccess": {
+      "value": 1,
+      "unit": "ratio",
+      "numerator": 1,
+      "denominator": 1,
+      "sampleSize": 1,
+      "target": 0.98,
+      "targetOperator": ">=",
+      "status": "pass"
+    },
+    "standardTaskP50Latency": {
+      "value": 96.71,
+      "unit": "seconds",
+      "numerator": 1,
+      "denominator": 1,
+      "sampleSize": 1,
+      "target": 180,
+      "targetOperator": "<=",
+      "status": "pass"
+    },
+    "budgetCompliance": {
+      "value": null,
+      "unit": "ratio",
+      "numerator": 0,
+      "denominator": 0,
+      "sampleSize": 0,
+      "target": 1,
+      "targetOperator": ">=",
+      "status": "insufficient_data",
+      "warning": "样本不足，暂不计算该指标。"
+    },
+    "approvalLeakRate": {
+      "value": null,
+      "unit": "ratio",
+      "numerator": 0,
+      "denominator": 0,
+      "sampleSize": 0,
+      "target": 0,
+      "targetOperator": "<=",
+      "status": "insufficient_data",
+      "warning": "样本不足，暂不计算该指标。"
+    },
+    "progressFreshness": {
+      "value": null,
+      "unit": "seconds",
+      "numerator": 0,
+      "denominator": 0,
+      "sampleSize": 0,
+      "target": 2,
+      "targetOperator": "<=",
+      "status": "insufficient_data",
+      "warning": "当前版本只持久化服务端事件，尚未采集浏览器展示时间。"
+    },
+    "evaluationPassRate": {
+      "value": 1,
+      "unit": "ratio",
+      "numerator": 22,
+      "denominator": 22,
+      "sampleSize": 22,
+      "target": 0.9,
+      "targetOperator": ">=",
+      "status": "pass"
+    }
+  },
+  "integrityWarnings": [
+    "存在缺少输入快照哈希的历史运行。"
+  ]
+}

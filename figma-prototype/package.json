@@ -1,0 +1,10 @@
+{
+  "name": "pm-agent-workbench-prototype",
+  "version": "1.0.0",
+  "description": "PM Agent Workbench prototype",
+  "scripts": {
+    "dev": "npx serve .",
+    "start": "npx serve ."
+  },
+  "license": "MIT"
+}

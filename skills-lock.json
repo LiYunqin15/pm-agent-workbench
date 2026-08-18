@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "skills": {
+    "backend-patterns": {
+      "source": "affaan-m/ECC",
+      "sourceType": "github",
+      "skillPath": ".agents/skills/backend-patterns/SKILL.md",
+      "computedHash": "f7b3bbdd5c638dd346cc756ab8e486a2a67a914ed35ca5c46ad7bf64a69d9891"
+    }
+  }
+}
