@@ -11,19 +11,6 @@
 
 未配置 API Key 时应用仍可运行，但只返回明确标记的演示结果，不会伪造外部研究证据。
 
-### 异步任务队列
-
-任务执行通过 Redis 6.2+ 和 BullMQ 队列异步处理。Next.js 进程只负责 API/UI，至少启动一个独立 Worker：
-
-```bash
-# Redis 默认地址：redis://127.0.0.1:6379
-npm run dev
-npm run worker
-```
-
-多实例部署时，所有 Next.js 实例和 Worker 使用同一个 `PM_AGENT_REDIS_URL`、`PM_AGENT_QUEUE_NAME` 和 `PM_AGENT_DB_PATH`。Worker 会写入心跳并巡检失联运行；任务不会自动重试，用户可以从失败页面主动重新执行。
-
-可通过 `PM_AGENT_WORKER_CONCURRENCY` 调整单个 Worker 的并发数，`PM_AGENT_RUN_TIMEOUT_QUICK_MS`、`PM_AGENT_RUN_TIMEOUT_STANDARD_MS` 和 `PM_AGENT_RUN_TIMEOUT_DEEP_MS` 调整 Agent 执行时限。执行页面会显示 Redis 连接、Worker 数量、队列状态、当前搜索词和真实来源事件。
 
 ### 运行模式
 
